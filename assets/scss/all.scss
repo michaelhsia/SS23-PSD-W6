@@ -1,0 +1,16 @@
+
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 自定義變數
+
+@import './utils/variables';
+// 載入BS5
+@import "../../node_modules/bootstrap";
+
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+
