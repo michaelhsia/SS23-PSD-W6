@@ -1,4 +1,28 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.py-25{
+  padding: 25px 0;
+}
+
+.header {
+  @media (min-width: 992px) {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+}
+
+.logo {
+  img {
+    width: 53px;
+  }
+}
+
+form {
+  background: #000;
+}
+.search {
+  width: 284px;
+  color: #878787;
+}
+
+.search-btn {
+  width: 51px;
 }
