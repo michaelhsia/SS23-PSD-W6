@@ -1,28 +1,42 @@
-.py-25{
-  padding: 25px 0;
-}
-
-.header {
-  @media (min-width: 992px) {
-    padding-left: 72px;
-    padding-right: 72px;
-  }
-}
-
 .logo {
   img {
-    width: 53px;
+    width: 40px;
+    @include media-breakpoint-up(sm) {
+      width: 53px;
+    }
   }
 }
 
 form {
+  width: 207px;
   background: #000;
+  @include media-breakpoint-up(sm) {
+      width: 335px;
+  }
 }
+
 .search {
-  width: 284px;
   color: #878787;
 }
 
-.search-btn {
-  width: 51px;
+.search-icon {
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.nav-lk {
+  &:hover {
+    color: #9C9E18;
+  }
+}
+
+.hamburger {
+  &:hover {
+    background: $primary;
+    border-radius: 4px;
+    span {
+      color: $secondary;
+    }
+  }
 }
