@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Yeseva+One&display=swap" rel="stylesheet">
     
     <title>index</title>
-    <script type="module" crossorigin src="/SS23-PSD-W6/assets/main-914dd193.js"></script>
-    <link rel="stylesheet" href="/SS23-PSD-W6/assets/main-08351e50.css">
+    <script type="module" crossorigin src="/SS23-PSD-W6/assets/main-663ba10b.js"></script>
+    <link rel="stylesheet" href="/SS23-PSD-W6/assets/main-6f0a0a9b.css">
     <link rel="stylesheet" href="/SS23-PSD-W6/assets/index-c5dda9ed.css">
   </head>
   <body>
@@ -48,6 +48,7 @@
         </div>
         <ul class="d-none d-md-flex align-items-center list-unstyled ms-2 mb-0">
             <li>
+            <!-- 用nav-link當class名會跟BS5衝突，所以用nav-lk -->
               <a class="nav-lk d-block fs-7 p-2 me-2" aria-current="page" href="#">
                 <i class="icofont-ui-file"></i>
                 REGISTER
@@ -62,7 +63,9 @@
         </ul>
     </div>
 </header>
-<div class="d-md-none collapse" id="collapse">
+
+<!-- collapse 效果要寫在 header 外面 -->
+<div class="collapse" id="collapse">
     <ul class="container-md list-unstyled border-bottom border-3 border-primary py-2">
         <li class="mb-2">
           <a class="nav-lk fs-7" aria-current="page" href="#">
@@ -78,48 +81,12 @@
         </li>
     </ul>
 </div>
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="/SS23-PSD-W6/assets/cat-0c0689ae.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
+    <footer class=" py-6 py-md-8"> 
+    <div class="container">
+        <p class="text-center ff-noto">© 7TAO七逃. All Rights Reserved</p>
     </div>
+</footer>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">我是 footer</footer>
     
   </body>
 </html>

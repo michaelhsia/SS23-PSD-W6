@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <script type="module" crossorigin src="/SS23-PSD-W6/assets/main-914dd193.js"></script>
-    <link rel="stylesheet" href="/SS23-PSD-W6/assets/main-08351e50.css">
+    <script type="module" crossorigin src="/SS23-PSD-W6/assets/main-663ba10b.js"></script>
+    <link rel="stylesheet" href="/SS23-PSD-W6/assets/main-6f0a0a9b.css">
   </head>
   <body>
     <header class="py-3 py-md-6 border-bottom border-primary border-3">
@@ -36,6 +36,7 @@
         </div>
         <ul class="d-none d-md-flex align-items-center list-unstyled ms-2 mb-0">
             <li>
+            <!-- 用nav-link當class名會跟BS5衝突，所以用nav-lk -->
               <a class="nav-lk d-block fs-7 p-2 me-2" aria-current="page" href="#">
                 <i class="icofont-ui-file"></i>
                 REGISTER
@@ -50,7 +51,9 @@
         </ul>
     </div>
 </header>
-<div class="d-md-none collapse" id="collapse">
+
+<!-- collapse 效果要寫在 header 外面 -->
+<div class="collapse" id="collapse">
     <ul class="container-md list-unstyled border-bottom border-3 border-primary py-2">
         <li class="mb-2">
           <a class="nav-lk fs-7" aria-current="page" href="#">
@@ -66,7 +69,12 @@
         </li>
     </ul>
 </div>    <h1>我是contact</h1>
-    <footer class="footer">我是 footer</footer>
+    <footer class=" py-6 py-md-8"> 
+    <div class="container">
+        <p class="text-center ff-noto">© 7TAO七逃. All Rights Reserved</p>
+    </div>
+</footer>
+
     
   </body>
 </html>
